@@ -1,0 +1,32 @@
+.awkward-main img{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    height: 100%;
+}
+.awkward-main{
+ position: relative;
+ /*background: red;*/
+}
+.inner-nav{
+    position: absolute;
+    right: 8px;
+    top:10px;
+}
+.inner-nav a{
+    color:#47a5d6;
+    font-size:18px;
+    padding:0 10px;
+}
+@media screen and (max-width: 1280px){
+   .inner-nav a{
+        font-size:16px;
+    }
+   
+}
+@media screen and (max-width: 1024px){
+   .inner-nav a{
+        font-size:14px;
+    }
+   
+}
