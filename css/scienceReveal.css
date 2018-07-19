@@ -2,15 +2,14 @@
     background: url(../images/public-bg.jpg) no-repeat center center;
     background-size:cover;
 }
-.awkward-main img{
+.science{
+    position: relative;
+}
+.science img{
     width: 100%;
     position: relative;
     z-index: 0;
-    height: 100%;
     vertical-align: bottom;
-}
-.awkward-main{
-    position: relative;
 }
 .inner-nav{
     position: absolute;
