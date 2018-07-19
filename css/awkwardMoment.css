@@ -1,3 +1,7 @@
+.public-outer{
+    background: url(../images/public-bg.jpg) no-repeat center center;
+    background-size:cover;
+}
 .awkward-main img{
     width: 100%;
     position: relative;
@@ -29,4 +33,9 @@
         font-size:14px;
     }
    
+}
+@media screen and (max-width:1020px){
+    .public-outer{
+        background-image: url("../images/public-mobile-bg.jpg")
+    }
 }
