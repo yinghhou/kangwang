@@ -9,30 +9,42 @@
     height: 100%;
 }
 .awkward-main{
- position: relative;
- /*background: red;*/
+    position: relative;
 }
 .inner-nav{
     position: absolute;
-    right: 8px;
+    right: 18px;
     top:10px;
+}
+.inner-nav:before{
+    content:'';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom:-40%;
+    background: -webkit-linear-gradient(left, #fff , #1998d1); 
+    background: -o-linear-gradient(right, #fff , #1998d1); 
+    background: -moz-linear-gradient(right,#fff , #1998d1); 
+    background: linear-gradient(to right, #fff , #1998d1);
 }
 .inner-nav a{
     color:#47a5d6;
     font-size:18px;
     padding:0 10px;
 }
+.inner-nav li a:last-child{
+    padding-right: 0;
+}
 @media screen and (max-width: 1280px){
    .inner-nav a{
         font-size:16px;
     }
-   
 }
 @media screen and (max-width: 1024px){
    .inner-nav a{
         font-size:14px;
     }
-   
 }
 @media screen and (max-width:1020px){
     .public-outer{
