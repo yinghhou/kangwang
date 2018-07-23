@@ -123,6 +123,40 @@ a{
     background: url(../images/icon-quick-search.png) no-repeat center center;
     cursor: pointer;
 }
+/*二级导航样式*/
+.public-inner-link{
+    background: #fff;
+}
+.public-inner-link .inner-nav{
+    text-align: right;
+}
+.public-inner-link .inner-nav p{
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    right: 1px;
+    top:10px;
+}
+.public-inner-link .inner-nav p:before{
+    content:'';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom:-40%;
+    background: -webkit-linear-gradient(left, #fff , #1998d1); 
+    background: -o-linear-gradient(right, #fff , #1998d1); 
+    background: -moz-linear-gradient(right,#fff , #1998d1); 
+    background: linear-gradient(to right, #fff , #1998d1);
+}
+.public-inner-link .inner-nav a{
+    color:#47a5d6;
+    font-size:18px;
+    padding:0 10px;
+}
+.public-inner-link .inner-nav li a:last-child{
+    padding-right: 0;
+}
 /*footer css */
 .public-footer{
     padding: 22px 0;
@@ -186,7 +220,7 @@ a{
     }
    
 /*移动端适配*/
-@media screen and (max-width:1020px){
+@media screen and (max-width:767px){
     .mobile-container-search{
         position: relative;
         padding:20px 0;

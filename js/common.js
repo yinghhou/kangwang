@@ -1,4 +1,7 @@
 $(function(){
+    /** 
+     * header hover 设置
+     */ 
      var timer;
     $(".public-nav>li").hover(function(){
         clearTimeout(timer);
@@ -9,4 +12,9 @@ $(function(){
             $(".public-nav>li .dropdown-menu").hide();
         },500)
     });
+    /**
+     * 计算窗体高度首屏显示
+     */
+    
+    
 })
