@@ -1,13 +1,12 @@
 
 body{
-    background: url(../images/img2/term-pc-bg.jpg) no-repeat center 0;
+    background: url(../images/img2/privacy-pc-bg.png) no-repeat center center;
+    background-size:120% 100%;
 }
 .term-content{
     padding:7% 5% 0;
 }
-.term-content dl:last-child dd{
-    padding-bottom: 44px;
-}
+
 .term-content dt{
     font-weight: bold;
     color:#1473d2;
@@ -21,6 +20,9 @@ body{
     background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 5%); 
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 5%); 
     }
+.term-content .contact p{
+    margin-bottom: 30px;
+}
 .term-content dd{
     color:#333;
     font-size: 12px;
@@ -28,6 +30,24 @@ body{
     padding-top:3px;
     padding-bottom:2%;
     line-height: 24px;
+}
+table{
+    width: 100%;
+}
+table tr th{
+    font-weight: 700;
+    font-size: 16px;
+}
+table tr td{
+    padding-top:16px;
+    vertical-align: middle;
+}
+table tr th,td{
+    width: 33.3%;
+    text-align: center;
+}
+td.center{
+    text-align: left;
 }
 .mobile-show{
     display: none;
@@ -42,9 +62,6 @@ body{
     }
     .term-content dd{
         font-size: 14px;
-    }
-    .term-content p:last-child{
-        padding-bottom: 30%;
     }
     .mobile-show{
         display: block;
