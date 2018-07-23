@@ -185,7 +185,7 @@ a{
     }
 .public-mobile-item{
     text-align: center;
-    padding: 14px 0;
+    padding: 10px 0;
     width: 100%;
     background-image: -moz-linear-gradient(90deg,rgba(255,255,255,.1) 0%,#c9c9c9 49%,rgba(255,255,255,.1) 104%);
     background-image: -webkit-gradient(90deg,rgba(255,255,255,.1) 0%,#c9c9c9 49%,rgba(255,255,255,.1) 104%);
@@ -195,6 +195,7 @@ a{
     color: #4b4b4b;
     text-align: center;
     line-height: 25px;
+    background: #cdcecf
 }
 .public-mobile-item a{
     margin: 0;
@@ -204,19 +205,19 @@ a{
 }
 /*pc 适配*/
 @media screen and (max-width: 1280px){
-    .public-nav>li>a{
-        font-size:16px;
+    .public-nav a,.public-inner-link .inner-nav a{
+        font-size:16px !important;
     }
     .public-nav .dropdown-menu a{
-        font-size: 14px;
+        font-size: 14px !important;;
     }
 }
 @media screen and (max-width: 1024px){
-    .public-nav>li>a{
-        font-size:14px;
+    .public-nav a,.public-inner-link .inner-nav a{
+        font-size:14px !important;
     }
     .public-nav .dropdown-menu a{
-        font-size: 12px;
+        font-size: 12px !important;
     }
    
 /*移动端适配*/

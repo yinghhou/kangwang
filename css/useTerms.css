@@ -1,15 +1,15 @@
 
 body{
-    background: url(../images/img2/public-pc-version.jpg) no-repeat center 0;
+    background: url(../images/img2/term-pc-bg.jpg) no-repeat center 0;
 }
-.version-content{
-    padding:8% 5% 15%;
+.term-content{
+    padding:7% 5% 0;
 }
-.version-content h3{
+
+.term-content dt{
     font-weight: bold;
     color:#1473d2;
     font-size: 20px;
-    margin-bottom: 10px;
     font-style:italic; 
 }
 .public-inner-link{
@@ -19,11 +19,12 @@ body{
     background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 5%); 
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 5%); 
     }
-.version-content p{
+.term-content dd{
     color:#333;
     font-size: 12px;
     letter-spacing: 1px;
     padding-top:3px;
+    padding-bottom:2%;
     line-height: 24px;
 }
 .mobile-show{
@@ -31,17 +32,16 @@ body{
 }
 @media screen and (max-width:767px){
     .public-outer{
-        background: url(../images/public-mobile-bg.jpg) no-repeat center center;
+        background: url(../images/public-mobile-bg.jpg) no-repeat 2% top;
+        background-size: cover;
     }
-    .version-content h3{
+    .term-content dt{
         font-weight:700;
-        margin: 48% 0 5%;
     }
-    .version-content p{
+    .term-content dd{
         font-size: 14px;
-        padding-top:7px;
     }
-    .version-content p:last-child{
+    .term-content p:last-child{
         padding-bottom: 30%;
     }
     .mobile-show{
