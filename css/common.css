@@ -157,6 +157,91 @@ a{
 .public-inner-link .inner-nav li a:last-child{
     padding-right: 0;
 }
+/*去屑止痒内容设置*/
+.main-box{
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 1) 10%);
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 1) 10%);
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 1) 10%);
+    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 1) 10%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 1) 5%);
+    padding:0 10% 20px;
+}
+.main-pc-header{
+    width: 90%;
+    margin:40px auto 50px;
+    text-align: center;
+}
+.main-pc-header img{
+    width: 100%;
+}
+.main-pc-show{
+    margin-bottom: 60px;
+}
+.common-left-border,.common-right-border{
+    position: relative;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -o-border-radius:4px;
+    -ms-border-radius:4px;
+    -moz-border-radius:4px;
+}
+.common-left-border{
+    border-left:4px solid #129ad8;
+}
+.common-right-border{
+    border-right:4px solid #129ad8;
+    position: relative;
+}
+.common-left-border:after,.common-left-border:before,.common-right-border:after,.common-right-border:before{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    clear: both;
+    position: absolute;
+}
+.common-left-border:after,.common-left-border:before{
+    background: -webkit-linear-gradient(left, #fff , #1998d1);
+    background: -o-linear-gradient(left, #fff , #1998d1);
+    background: -moz-linear-gradient(left,#fff , #1998d1);
+    background: linear-gradient(to left, #fff , #1998d1);
+}
+.common-right-border:after,.common-right-border:before{
+    background: -webkit-linear-gradient(right, #fff , #1998d1);
+    background: -o-linear-gradient(right, #fff , #1998d1);
+    background: -moz-linear-gradient(right,#fff , #1998d1);
+    background: linear-gradient(to right, #fff , #1998d1);
+}
+.common-left-border:after,.common-right-border:after{
+     top:0;
+}
+.common-left-border:before,.common-right-border:before{
+    bottom:0;
+}
+.common-left-border p img{
+    width: 100%;
+    padding:0px 20px 20px;
+}
+.common-header{
+    text-align: center;
+    color:#1473d2;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding:40px 50px;
+    font-family: "宋体";
+}
+.common-right-border img{
+    margin:20px 0;
+    width: 100%;
+}
+.common-right-border .common-header {
+    width: 100%;
+    text-align: left;
+    padding:40px 0 30px;
+    letter-spacing: 1px;
+}
+/*set end*/
 /*footer css */
 .public-footer{
     padding: 22px 0;
@@ -219,6 +304,19 @@ a{
     .public-nav .dropdown-menu a{
         font-size: 12px !important;
     }
+    /*公用css 去屑+*/
+    .main-pc-header{
+        margin:18px auto;
+    }
+   .main-box{
+       padding:0 4%;
+   }
+   .common-header{
+       padding:24px 0 10px;
+   }
+   .main-pc-show{
+       margin-bottom: 30px;
+   }
    
 /*移动端适配*/
 @media screen and (max-width:767px){
@@ -279,6 +377,9 @@ a{
     }
     #pc-img{
         display: none;
+    }
+    .common-header{
+        font-size: 15px;
     }
 }
 
