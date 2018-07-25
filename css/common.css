@@ -168,7 +168,7 @@ a{
 }
 .main-pc-header{
     width: 90%;
-    margin:40px auto 50px;
+    margin:40px 20% 50px;
     text-align: center;
 }
 .main-pc-header img{
@@ -229,7 +229,6 @@ a{
     font-size: 30px;
     letter-spacing: 1px;
     padding:40px 50px;
-    font-family: "宋体";
 }
 .common-right-border img{
     margin:20px 0;
@@ -309,7 +308,7 @@ a{
         margin:18px auto;
     }
    .main-box{
-       padding:0 4%;
+       padding:0 4% 2%;
    }
    .common-header{
        padding:24px 0 10px;

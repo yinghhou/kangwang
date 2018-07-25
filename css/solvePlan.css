@@ -130,10 +130,8 @@
 }*/
 /*内容设置end*/
 .col-xs-5 P:last-child{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 38px;
-    font-family: "宋体";
-    font-weight: 600;
     margin-bottom: 20px;
 }
 .main-mobile{
