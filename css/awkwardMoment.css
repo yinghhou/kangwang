@@ -1,17 +1,14 @@
 .public-outer{
-    background: url(../images/public-bg.jpg) no-repeat center center;
+    background: url("../images/solveImg/solve-pc-bg.png") no-repeat center center;
     background-size:cover;
 }
 .awkward-main img{
-    width: 100%;
     position: relative;
     z-index: 0;
-    height: 100%;
     vertical-align: bottom;
 }
 .awkward-main{
     position: relative;
-   
 }
 .inner-nav{
     position: absolute;
@@ -38,18 +35,137 @@
 .inner-nav li a:last-child{
     padding-right: 0;
 }
+/*内容 set*/
+.main-box{
+    padding:0 0 50px;
+}
+.left-box, .bottom-box{
+    padding:0 4% 0;
+}
+.bottom-box-title{
+    width: 65%;
+    margin:3% 0;
+}
+.bottom-box-title img{
+    width: 100%;
+}
+.main-pc-header{
+    width: 50%;
+    margin:40px 40% 18px;
+}
+.common-left-border{
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+.main-mobile{
+    display: none;
+}
+.left-box>div{
+    padding-left:0;
+    padding-right: 0;
+    position: relative;
+    z-index: 0;
+}
+.left-box>div:first-child{
+    position: relative;
+    right: -20px;
+    z-index:1;
+}
+.left-box>div:last-child{
+    top:44px;
+}
+.left-box img{
+    width: 100%;
+}
+.common-left-border p{
+    padding:3% 0 5% 4%;
+    
+}
+.bottom-box{
+    position: relative;
+}
+.bottom-box img{
+    width: 100%;
+}
+/*内容设置end*/
 @media screen and (max-width: 1280px){
    .inner-nav a{
         font-size:16px;
     }
+    .common-header{
+        font-size: 18px;
+    }
+    .common-left-border{
+       font-size: 18px;
+       letter-spacing: 1px;
+       line-height: 28px;
+    }
 }
 @media screen and (max-width: 1024px){
+    .public-outer{
+        background: url("../images/solveImg/solve-mobile-bg.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+     .common-left-border{
+       font-size: 14px;
+       line-height: 22px;
+     }
    .inner-nav a{
         font-size:14px;
     }
-}
-@media screen and (max-width:1020px){
-    .public-outer{
-        background-image: url("../images/public-mobile-bg.jpg")
+    .common-header{
+        font-size: 18px;
     }
+    .common-left-border{
+        font-size: 18px;
+    }
+    .left-box>div:last-child{
+        top:23px;   
+    }
+}
+@media screen and (max-width:767px){
+    .main-pc{
+        display: none;
+    }
+    .main-mobile{
+        display: block;
+        text-align: center !important;
+    }
+    .common-header{
+        font-size: 17px;
+    }
+    .common-left-border{
+        font-size:10px;
+        font-weight: normal;
+    }
+    .common-left-border{
+         line-height: 18px;
+    }
+    .common-right-border .common-header{
+        padding:24px 0 10px;
+    }
+    .main-pc-header{
+        margin-top:20px;
+        margin-bottom: 10px;
+    }
+    .common-left-border p{
+        padding:3% 1% 5% 8%
+    }
+    .bottom-box-title{
+        width: 88%;
+    }
+    .bottom-box-title{
+        margin:5% 0;
+    }
+    .main-box{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:320px){
+      .common-left-border{
+         line-height: 14px;
+         font-size: 10px;
+    }
+
 }
