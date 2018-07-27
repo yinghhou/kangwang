@@ -61,9 +61,9 @@
 }
 .error-tip{
     position: absolute;
-    top:-50px;
-    width: 100px;
-    height: 100px;
+    top:-60px;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
     text-align: center;
     background: #fff;
@@ -73,18 +73,18 @@
     box-shadow: 0 0 30px #dad8d1;
 }
 .error-left{
-    left:-52px;
+    left:-62px;
 }
 .error-right{
-    right:-52px;
+    right:-62px;
 }
 .error-tip span{
     display: inline-block;
-    width:86px;
-    height: 86px;
+    width:106px;
+    height: 106px;
     border:2px solid #1473d2;
     border-radius: 100%;
-    line-height: 90px;
+    line-height: 106px;
     margin-top:7px;
 }
 .error-tip b{
@@ -106,6 +106,9 @@
 }
 .common-right-border .common-header{
     text-align: center;
+}
+.common-header{
+    font-style: italic;
 }
 /*内容设置end*/
 @media screen and (max-width: 1280px){
