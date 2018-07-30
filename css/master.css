@@ -255,28 +255,32 @@ body.frontPage{
 }
 .index-btm-section .sList .text{
     height: 44px;
-    line-height: 44px;
     position: absolute;
-    left: 0;
-    bottom: 10px;
-    width: 55%;
+    left: 10%;
+    bottom: 28px;
     display: inline-block;
     padding: 0 20px;
-    color: white;
-    text-align: right;
     font-size: 18px;
     z-index: 5;
+    color:#e52434;
+    letter-spacing: 2px;
 }
-.index-btm-section .sList .text:before{
-    background: #e52434;
-    z-index: -1;
+.index-btm-section .sList  span{
     position: absolute;
-    content: '';
-    top: 0;
-    left: 10px;
-    right: 0;
-    bottom: 0;
-    transform: skewX(-22deg);
+    right:-80%;
+    top:50%;
+    width: 24px;
+    height: 24px;
+    background: #e52434;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    color:#fff;
+    text-align: center;
+    line-height: 22px;
+    margin-top:-6px;
+}
+.index-btm-section .sList .last-text{
+    padding-top:15px;
 }
 .index-nav-section{
     display: none;
@@ -423,10 +427,27 @@ body.frontPage{
     .index-btm-section .sList .text{
         font-size: 16px;
     }
+    .index-btm-section .sList .last-text{
+         padding-top:14px;
+      }
+    .index-btm-section .sList  span{
+        right:-60%;
+       
+    }
 }
 @media screen and (max-width: 1100px){
     .container{
         width: 900px;
+    }
+    .index-btm-section .sList .text{
+        bottom: 6px;
+    }
+    .index-btm-section .sList .last-text{
+         padding-top:14px;
+      }
+    .index-btm-section .sList  span{
+        right:-20%;
+       
     }
 }
 @media screen and (max-width: 992px){
@@ -441,9 +462,6 @@ body.frontPage{
     }
     .indexBanner .swiper-slide{
         height: 300px;
-    }
-    .index-btm-section .sList .text{
-        width: 68%;
     }
 }
 @media screen and (min-width: 768px){
@@ -528,15 +546,14 @@ body.frontPage{
         left: -25px;
     }
     .index-btm-section .sList .text{
-        width: 84%;
-        padding: 0 10px;
+        /*width: 84%;*/
+        padding: 10px 7px 0 9px;
         font-size: 14px;
-        text-align: center;
     }
-    .index-btm-section .sList .text:before{
+    /*.index-btm-section .sList .text:before{
         transform: skewX(-14deg);
         left: 6px;
-    }
+    }*/
     .footer .copyright{
         display: none;
     }
@@ -549,6 +566,18 @@ body.frontPage{
     .footer .link a:first-child{
         border: medium none;
     }
+    .index-btm-section .sList  span{
+        position: absolute;
+        top:50%;
+        width: 16px;
+        height: 16px;
+        padding-left:3px;
+        line-height: 13px;
+        margin-top:-2px;
+}
+.index-btm-section .sList .last-text{
+        padding-top:20px;
+}
 }
 @media screen and (max-width: 450px){
     .index-nav-section .nav-title .tt{
@@ -563,6 +592,7 @@ body.frontPage{
     }
     .index-btm-section .sList .text{
         font-size: 12px;
+       
     }
     /*.index-btm-section .sList li{
         width: 100%;
@@ -574,9 +604,9 @@ body.frontPage{
     .index-btm-section{
         padding: 10px 0;
     }
-    .index-btm-section .sList .text{
+    /*.index-btm-section .sList .text{
         width: 88%;
-    }
+    }*/
     .index-btm-section .sList li:first-child{
         left: 5px;
     }
