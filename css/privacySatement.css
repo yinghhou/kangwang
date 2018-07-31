@@ -6,7 +6,9 @@ body{
 .term-content{
     padding:7% 5% 0;
 }
-
+.term-content dl{
+    padding-bottom:2%;
+}
 .term-content dt{
     font-weight: bold;
     color:#1473d2;
@@ -25,25 +27,26 @@ body{
 }
 .term-content dd{
     color:#333;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     padding-top:3px;
-    padding-bottom:2%;
     line-height: 24px;
 }
 table{
     width: 100%;
+    padding:8px 0 12px;
 }
 table tr th{
     font-weight: 700;
     font-size: 16px;
+   
 }
 table tr td{
     padding-top:16px;
     vertical-align: middle;
 }
 table tr th,td{
-    width: 33.3%;
+    width: 20%;
     text-align: center;
 }
 td.center{
@@ -51,6 +54,51 @@ td.center{
 }
 .mobile-show{
     display: none;
+}
+.term-content dt{
+      margin-bottom: 9px;
+}
+.term-content dd a{
+    text-decoration: underline;
+    color:#1473d2;
+    font-weight: bold;
+}
+.term-content dd ul{
+    padding-left:10px;
+}
+.term-content .sub-title{
+    font-size: 16px;
+    font-weight: 700;
+    color:#489ef3;
+    font-style: italic;
+    padding: 5px 0;
+}
+.term-content .sub-normal{
+    color:#333;
+    font-style: normal;
+    border-bottom: 1px solid #333;
+}
+.term-content .title-center{
+    text-align: center;
+}
+.term-content .time{
+    margin:10px 0;
+}
+.term-content span{
+    position: relative;
+}
+.term-content span:before{
+    display: inline-block;
+    content: '';
+    height: 1px;
+    width: 120%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background: -webkit-linear-gradient(left, #fff , #1473d2);
+    background: -o-linear-gradient(left, #fff , #1473d2);
+    background: -moz-linear-gradient(left,#fff , #1473d2);
+    background: linear-gradient(to left, #fff , #1473d2);
 }
 @media screen and (max-width:767px){
     .public-outer{
@@ -61,7 +109,16 @@ td.center{
         font-weight:700;
     }
     .term-content dd{
+        font-size: 12px;
+    }
+    table tr th{
         font-size: 14px;
+    }
+    table tr td{
+         font-size: 10px;
+     }
+    .term-content dt{
+        font-size: 18px;
     }
     .mobile-show{
         display: block;
@@ -69,4 +126,5 @@ td.center{
     .pc-show{
         display: none;
     }
+
 }
