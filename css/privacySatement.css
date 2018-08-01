@@ -33,7 +33,10 @@ body{
     line-height: 26px;
 }
 table{
-    width: 100%;
+    position: relative;
+    left:-14px;
+    /*right: -10px;*/
+    width: 110%;
     padding:8px 0 12px;
 }
 table tr th{
@@ -125,6 +128,12 @@ td.center{
     }
     .pc-show{
         display: none;
+    }
+    table tr th:nth-of-type(2), td:nth-of-type(2){
+        width: 25%;
+    }
+    table tr th:nth-of-type(3), td:nth-of-type(3){
+        width: 15%;
     }
 
 }
